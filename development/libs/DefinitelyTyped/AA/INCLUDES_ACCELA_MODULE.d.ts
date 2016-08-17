@@ -86,11 +86,11 @@ export interface IAccelaFunctions {
 
     /**
      *
-     * @param e
-     * @param t
+     * @param name
+     * @param data
      * @return
      */
-    addASITable(e: string, t: any): boolean;
+    addASITable(name: string, data: any): boolean;
 
     /**
      *
@@ -174,12 +174,12 @@ export interface IAccelaFunctions {
 
     /**
      *
-     * @param e
-     * @param t
+     * @param lookupName
+     * @param value
      * @param n
      * @return
      */
-    addLookup(e: any, t: any, n: any): boolean;
+    addLookup(lookupName: string, value: string, n: any): boolean;
 
     /**
      *
@@ -978,11 +978,12 @@ export interface IAccelaFunctions {
 
     /**
      *
-     * @param e
-     * @param t
+     * @param appSpecific, group name has to be used in case "useAppSpecificGroupName" option is equal to true
+     * @param value
      * @return
+     * appSpecific, group name has to be used in case "useAppSpecificGroupName" option is equal to true
      */
-    editAppSpecific(e: any, t: any): boolean;
+    editAppSpecific(appSpecific: string, value: string): boolean;
 
     /**
      *
@@ -1385,7 +1386,7 @@ export interface IAccelaFunctions {
      * @param e
      * @return
      */
-    getAppSpecific(e: any): boolean;
+    getAppSpecific(e: string): string;
 
     /**
      *
@@ -1732,10 +1733,10 @@ export interface IAccelaFunctions {
 
     /**
      *
-     * @param e
+     * @param licenseNo
      * @return
      */
-    getRefLicenseProf(e: string): boolean;
+    getRefLicenseProf(licenseNo: string): any;
 
     /**
      *
@@ -2095,14 +2096,14 @@ export interface IAccelaFunctions {
 
     /**
      *
-     * @param e
+     * @param tableName
      * @return
      */
-    loadASITable(e: any): boolean;
+    loadASITable(tableName: string): [any];
     /**
      *
      */
-    loadASITable();
+    // loadASITable();
 
     /**
      *
@@ -2343,10 +2344,10 @@ export interface IAccelaFunctions {
 
     /**
      *
-     * @param e
+     * @param name
      * @return
      */
-    removeASITable(e: any): boolean;
+    removeASITable(name: string): boolean;
 
     /**
      *
@@ -2544,7 +2545,7 @@ export interface IAccelaFunctions {
      * @param e
      * @return
      */
-    taskStatus(e: any): boolean;
+    taskStatus(e: any): string;
 
     /**
      *

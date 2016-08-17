@@ -1,5 +1,5 @@
 export interface IASITableValObj {
-    new (e, t, n);
+    new (e, t, n): IASITableValObj;
     columnName: any;
     fieldValue: any;
     readOnly: boolean;

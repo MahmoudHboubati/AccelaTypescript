@@ -1,4 +1,8 @@
-/// <reference path="./importTo.ts"/>
+import {IRecord} from '../../../development/libs/DefinitelyTyped/RECORD/INCLUDE_RECORD.d';
+import {IAA} from '../../../development/libs/DefinitelyTyped/AA/AA.d';
+
+declare var Record: IRecord;
+declare var aa: IAA;
 
 /*---Here we go---*/
 
@@ -21,5 +25,5 @@ try {
     var warehousesAmendment = fira.getASI('GENERAL', 'Label Status Remark', 'The value is null');
     aa.print(warehousesAmendment);
 } catch (e) {
-    aa.print(e.message)
+    aa.print(e.message);
 }
