@@ -15,9 +15,9 @@ var vLevel: number;
 var showDebug: any;
 var br: any;
 var debug: string;
-function getScriptText(scriptName: string): string {
-    throw new Error("Not implemented yet");
-}
+// function getScriptText(scriptName: string): string {
+//     throw new Error("Not implemented yet");
+// }
 var docListResult: any;
 var currentUserID: any;
 var logDebug: any;

@@ -2017,7 +2017,7 @@ declare function getScriptAction_v1_6(e : any): any;
  * @param e
  * @return
  */
-declare function getScriptText(e : string): string;
+ //declare function getScriptText(e : string): string;
 
 /**
  *

@@ -1,8 +1,4 @@
-import {IRecord} from '../../../development/libs/DefinitelyTyped/RECORD/INCLUDE_RECORD.d';
-import {IAA} from '../../../development/libs/DefinitelyTyped/AA/AA.d';
-
-var Record: IRecord;
-var aa: IAA;
+/// <reference path="./importTo.ts"/>
 
 /*---Here we go---*/
 

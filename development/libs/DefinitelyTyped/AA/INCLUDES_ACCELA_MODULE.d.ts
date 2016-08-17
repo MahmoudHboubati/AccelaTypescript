@@ -1816,7 +1816,7 @@ export interface IAccelaFunctions {
      * @param e
      * @return
      */
-    getScriptText(e: string): string;
+    //getScriptText(e: string): string;
 
     /**
      *
